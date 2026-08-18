@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/plugins/download-url?unique_identifier=langgenius%2Fgoogle%3A0.1.6%40f9bdc225b84abfaca4865e7d71b503410fb40b8bd7e23b9f7d2b49554f906260"
+  },
+  "response": {
+    "status": 302,
+    "contentType": "text/html; charset=utf-8",
+    "location": "https://dify-plugin-saas.305dbc7da819eb47bb3f3f3bc8927046.r2.cloudflarestorage.com/langgenius/packages/google/versions/0.1.6.difypkg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Checksum-Mode=ENABLED&X-Amz-Credential=cab6da8bc1afc482c908870a079dc995%2F20260818%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260818T160037Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&response-content-type=application%2Fzip&x-id=GetObject&X-Amz-Signature=1a7b4ee700852174584e409a32bc014d1825138e97644427dbb6f2914cf817fa",
+    "body": {
+      "nonJsonBody": "<a href=\"https://dify-plugin-saas.305dbc7da819eb47bb3f3f3bc8927046.r2.cloudflarestorage.com/langgenius/packages/google/versions/0.1.6.difypkg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Checksum-Mode=ENABLED&amp;X-Amz-Credential=cab6da8bc1afc482c908870a079dc995%2F20260818%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20260818T160037Z&amp;X-Amz-Expires=1800&amp;X-Amz-SignedHeaders=host&amp;response"
+    }
+  }
+}

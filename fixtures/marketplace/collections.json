@@ -1,0 +1,160 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/collections?page=1&page_size=100",
+    "headers": {
+      "X-Dify-Version": "1.10.0",
+      "User-Agent": "<browser user agent>"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "collections": [
+          {
+            "name": "partners",
+            "description": {
+              "en_US": "Plugins verified by Dify partners.",
+              "ja_JP": "Dify パートナーによって認定されたプラグイン。",
+              "zh_Hans": "由 Dify 合作伙伴认证的插件。",
+              "zh_Hant": "由 Dify 合作夥伴認證的外掛程式。"
+            },
+            "label": {
+              "en_US": "Partners",
+              "ja_JP": "パートナー",
+              "zh_Hans": "合作伙伴",
+              "zh_Hant": "合作夥伴"
+            },
+            "created_at": "2026-01-21T07:36:19.544592Z",
+            "updated_at": "2026-05-28T07:33:35.248418Z",
+            "searchable": false,
+            "search_params": {},
+            "priority": 8
+          },
+          {
+            "name": "top20",
+            "description": {
+              "en_US": "Top 20 most installed models",
+              "ja_JP": "最もインストールされている上位 20 モデル",
+              "zh_Hans": "安装量前二十的模型",
+              "zh_Hant": "安裝量前二十的模型"
+            },
+            "label": {
+              "en_US": "Top 20 Models",
+              "ja_JP": "上位 20 モデル",
+              "zh_Hans": "Top 20 模型",
+              "zh_Hant": "Top 20 模型"
+            },
+            "created_at": "2026-05-28T07:29:37.394813Z",
+            "updated_at": "2026-05-28T07:32:19.56834Z",
+            "searchable": false,
+            "search_params": {},
+            "priority": 7
+          },
+          {
+            "name": "search",
+            "description": {
+              "en_US": "Search tool plugins",
+              "ja_JP": "検索ツールプラグイン",
+              "zh_Hans": "搜索工具插件",
+              "zh_Hant": "搜尋工具插件"
+            },
+            "label": {
+              "en_US": "Search",
+              "ja_JP": "検索",
+              "zh_Hans": "搜索",
+              "zh_Hant": "搜尋"
+            },
+            "created_at": "2026-01-21T07:36:22.332324Z",
+            "updated_at": "2026-05-28T07:37:56.231929Z",
+            "searchable": false,
+            "search_params": {},
+            "priority": 6
+          },
+          {
+            "name": "image",
+            "description": {
+              "en_US": "Tools related to generating or processing images and videos.",
+              "ja_JP": "画像や動画の生成・処理に関連するツール。",
+              "zh_Hans": "与生成或处理图像和视频相关的工具。",
+              "zh_Hant": "與生成或處理圖像和視訊相關的工具。"
+            },
+            "label": {
+              "en_US": "Image & Video",
+              "ja_JP": "画像とビデオ",
+              "zh_Hans": "图像和视频",
+              "zh_Hant": "影像和影片"
+            },
+            "created_at": "2026-01-21T07:36:23.153992Z",
+            "updated_at": "2026-06-02T05:48:36.227572Z",
+            "searchable": false,
+            "search_params": {},
+            "priority": 4
+          },
+          {
+            "name": "featured",
+            "description": {
+              "en_US": "",
+              "zh_Hans": ""
+            },
+            "label": {
+              "en_US": "Featured",
+              "zh_Hans": "精选"
+            },
+            "created_at": "2026-01-21T07:36:20.757117Z",
+            "updated_at": "2026-01-21T07:36:20.757117Z",
+            "searchable": true,
+            "search_params": {
+              "query": "",
+              "sort_by": "install_count",
+              "sort_order": "DESC"
+            },
+            "priority": 0
+          },
+          {
+            "name": "latest",
+            "description": {
+              "en_US": "",
+              "zh_Hans": ""
+            },
+            "label": {
+              "en_US": "Latest",
+              "zh_Hans": "最新"
+            },
+            "created_at": "2026-01-21T07:36:21.664736Z",
+            "updated_at": "2026-01-21T07:36:21.664736Z",
+            "searchable": true,
+            "search_params": {
+              "query": "",
+              "sort_by": "created_at",
+              "sort_order": "DESC"
+            },
+            "priority": 0
+          },
+          {
+            "name": "data",
+            "description": {
+              "en_US": "Plugins for data crawling and processing.",
+              "zh_Hans": "数据抓取和处理插件。"
+            },
+            "label": {
+              "en_US": "Data",
+              "zh_Hans": "数据"
+            },
+            "created_at": "2026-01-21T07:36:23.954799Z",
+            "updated_at": "2026-01-21T07:36:23.954799Z",
+            "searchable": false,
+            "search_params": {},
+            "priority": 0
+          }
+        ],
+        "total": 7
+      },
+      "msg": "ok"
+    }
+  }
+}

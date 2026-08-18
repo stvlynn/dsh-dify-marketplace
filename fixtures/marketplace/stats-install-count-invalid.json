@@ -1,0 +1,22 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/stats/plugins/install_count",
+    "headers": {
+      "X-Dify-Version": "1.10.0",
+      "User-Agent": "<browser user agent>"
+    },
+    "body": {
+      "unique_identifier": "dsh-dify-marketplace-probe/invalid:0.0.0@deadbeef"
+    }
+  },
+  "response": {
+    "status": 400,
+    "contentType": "application/json; charset=utf-8",
+    "body": {
+      "code": -1,
+      "data": null,
+      "msg": "plugin not found"
+    }
+  }
+}

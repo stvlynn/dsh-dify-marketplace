@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["es2024"],
+    "types": ["node"],
+    "rootDir": "src",
+    "outDir": "lib/types"
+  },
+  "include": ["src/host", "src/runtime", "src/shared", "src/index.ts"]
+}

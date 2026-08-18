@@ -1,0 +1,27 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/bundles/search/advanced",
+    "headers": {
+      "X-Dify-Version": "1.10.0",
+      "User-Agent": "<browser user agent>"
+    },
+    "body": {
+      "page": 1,
+      "page_size": 3,
+      "query": ""
+    }
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "bundles": [],
+        "total": 0
+      },
+      "msg": "ok"
+    }
+  }
+}

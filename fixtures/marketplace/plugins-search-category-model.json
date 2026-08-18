@@ -1,0 +1,149 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/plugins/search/advanced",
+    "headers": {
+      "X-Dify-Version": "1.10.0",
+      "User-Agent": "<browser user agent>"
+    },
+    "body": {
+      "page": 1,
+      "page_size": 3,
+      "query": "",
+      "category": "model",
+      "tags": []
+    }
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "plugins": [
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "Tongyi",
+              "zh_Hans": "通义"
+            },
+            "category": "model",
+            "icon": "langgenius/packages/tongyi/_assets/icon_s_en.png",
+            "index_id": "langgenius___tongyi",
+            "install_count": 1350838,
+            "label": {
+              "en_US": "Tongyi",
+              "zh_Hans": "通义"
+            },
+            "latest_package_identifier": "langgenius/tongyi:0.2.13@76feba79a09357673e1ebe24f1ec98123062d3f3198abe08551804def1fcd020",
+            "latest_version": "0.2.13",
+            "name": "tongyi",
+            "org": "langgenius",
+            "plugin_id": "langgenius/tongyi",
+            "plugins": {
+              "agent_strategies": null,
+              "datasources": null,
+              "endpoints": null,
+              "models": [
+                "provider/tongyi.yaml"
+              ],
+              "tools": null,
+              "triggers": null
+            },
+            "privacy_options": "",
+            "privacy_policy": "",
+            "repository": null,
+            "status": "active",
+            "tags": [],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "langgenius"
+            },
+            "version_updated_at": "2026-08-17T02:05:56Z"
+          },
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "Google's Gemini model.",
+              "zh_Hans": "谷歌提供的 Gemini 模型。"
+            },
+            "category": "model",
+            "icon": "langgenius/packages/gemini/_assets/icon_s_en.svg",
+            "index_id": "langgenius___gemini",
+            "install_count": 455232,
+            "label": {
+              "en_US": "Gemini"
+            },
+            "latest_package_identifier": "langgenius/gemini:0.9.5@fc6c7d17b0852db57e2958a4051b9c5c517ba7934c43df8536c43b9ecbded514",
+            "latest_version": "0.9.5",
+            "name": "gemini",
+            "org": "langgenius",
+            "plugin_id": "langgenius/gemini",
+            "plugins": {
+              "agent_strategies": null,
+              "datasources": null,
+              "endpoints": null,
+              "models": [
+                "provider/google.yaml"
+              ],
+              "tools": null,
+              "triggers": null
+            },
+            "privacy_options": "",
+            "privacy_policy": "",
+            "repository": null,
+            "status": "active",
+            "tags": [],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "langgenius"
+            },
+            "version_updated_at": "2026-08-13T19:47:15Z"
+          },
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "Official DeepSeek models, including deepseek-v4-flash and deepseek-v4-pro.",
+              "zh_Hans": "DeepSeek 官方模型，包括 deepseek-v4-flash 和 deepseek-v4-pro。"
+            },
+            "category": "model",
+            "icon": "langgenius/packages/deepseek/_assets/icon_s_en.svg",
+            "index_id": "langgenius___deepseek",
+            "install_count": 1317736,
+            "label": {
+              "en_US": "DeepSeek",
+              "zh_Hans": "深度求索"
+            },
+            "latest_package_identifier": "langgenius/deepseek:0.0.20@850efe73fb62bbe7ab2229116086596596297a77174fb86f73e1363b99a24116",
+            "latest_version": "0.0.20",
+            "name": "deepseek",
+            "org": "langgenius",
+            "plugin_id": "langgenius/deepseek",
+            "plugins": {
+              "agent_strategies": null,
+              "datasources": null,
+              "endpoints": null,
+              "models": [
+                "provider/deepseek.yaml"
+              ],
+              "tools": null,
+              "triggers": null
+            },
+            "privacy_options": "",
+            "privacy_policy": "",
+            "repository": null,
+            "status": "active",
+            "tags": [],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "langgenius"
+            },
+            "version_updated_at": "2026-08-13T19:15:30Z"
+          }
+        ],
+        "total": 143
+      },
+      "msg": "ok"
+    }
+  }
+}

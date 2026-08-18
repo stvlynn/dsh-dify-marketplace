@@ -1,0 +1,23 @@
+{
+  "method": "GET",
+  "url": "https://marketplace.dify.ai/",
+  "request_body": null,
+  "http_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "stderr": "",
+  "body_bytes": 152714,
+  "json_ok": false,
+  "json": null,
+  "body_text_preview": "<!DOCTYPE html><html lang=\"en-US\" class=\"h-full\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/0kpsm__iu0pq5.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/11u3kbl6mc.z9.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/12prtiikigkk8.css",
+  "name": "homepage",
+  "response_headers": {
+    "date": "Tue, 18 Aug 2026 15:36:31 GMT",
+    "content-type": "text/html; charset=utf-8",
+    "x-frame-options": "DENY",
+    "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "cf-cache-status": "DYNAMIC",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "server": "cloudflare"
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/plugins/search/advanced",
+    "headers": {
+      "X-Dify-Version": "1.10.0",
+      "User-Agent": "<browser user agent>"
+    },
+    "body": {
+      "page": 1,
+      "page_size": 3,
+      "query": "google",
+      "sort_by": "install_count",
+      "sort_order": "DESC"
+    }
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "plugins": [
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "Google's Gemini model.",
+              "zh_Hans": "谷歌提供的 Gemini 模型。"
+            },
+            "category": "model",
+            "icon": "langgenius/packages/gemini/_assets/icon_s_en.svg",
+            "index_id": "langgenius___gemini",
+            "install_count": 455232,
+            "label": {
+              "en_US": "Gemini"
+            },
+            "latest_package_identifier": "langgenius/gemini:0.9.5@fc6c7d17b0852db57e2958a4051b9c5c517ba7934c43df8536c43b9ecbded514",
+            "latest_version": "0.9.5",
+            "name": "gemini",
+            "org": "langgenius",
+            "plugin_id": "langgenius/gemini",
+            "plugins": {
+              "agent_strategies": null,
+              "datasources": null,
+              "endpoints": null,
+              "models": [
+                "provider/google.yaml"
+              ],
+              "tools": null,
+              "triggers": null
+            },
+            "privacy_options": "",
+            "privacy_policy": "",
+            "repository": null,
+            "status": "active",
+            "tags": [],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "langgenius"
+            },
+            "version_updated_at": "2026-08-13T19:47:15Z"
+          },
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "A tool for performing a Google SERP search and extracting snippets and webpages.Input should be a search query.",
+              "zh_Hans": "一个用于执行 Google SERP 搜索并提取片段和网页的工具。输入应该是一个搜索查询。"
+            },
+            "category": "tool",
+            "icon": "langgenius/packages/google/_assets/icon.svg",
+            "index_id": "langgenius___google",
+            "install_count": 152545,
+            "label": {
+              "en_US": "Google"
+            },
+            "latest_package_identifier": "langgenius/google:0.1.6@f9bdc225b84abfaca4865e7d71b503410fb40b8bd7e23b9f7d2b49554f906260",
+            "latest_version": "0.1.6",
+            "name": "google",
+            "org": "langgenius",
+            "plugin_id": "langgenius/google",
+            "plugins": {
+              "agent_strategies": null,
+              "datasources": null,
+              "endpoints": null,
+              "models": null,
+              "tools": [
+                "provider/google.yaml"
+              ],
+              "triggers": null
+            },
+            "privacy_options": "",
+            "privacy_policy": "",
+            "repository": "",
+            "status": "active",
+            "tags": [
+              {
+                "name": "search"
+              }
+            ],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "langgenius"
+            },
+            "version_updated_at": "2026-07-22T12:23:00Z"
+          },
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "SearchApi is a robust real-time SERP API delivering structured data from a collection of search engines including Google Search, Google Jobs, YouTube, Google News, and many more.",
+              "pt_BR": "SearchApi is a robust real-time SERP API delivering structured data from a collection of search engines including Google Search, Google Jobs, YouTube, Google News, and many more.",
+              "zh_Hans": "SearchApi 是一个强大的实时 SERP API，可提供来自 Google 搜索、Google 招聘、YouTube、Google 新闻等搜索引擎集合的结构化数据。"
+            },
+            "category": "tool",
+            "icon": "langgenius/packages/searchapi/_assets/icon.svg",
+            "index_id": "langgenius___searchapi",
+            "install_count": 108931,
+            "label": {
+              "en_US": "SearchApi",
+              "pt_BR": "SearchApi",
+              "zh_Hans": "SearchApi"
+            },
+            "latest_package_identifier": "langgenius/searchapi:0.0.8@07f7ffe70890c993d09cf87598d8c09776b7fc8d18bd0dd63f352aa38ce94a15",
+            "latest_version": "0.0.8",
+            "name": "searchapi",
+            "org": "langgenius",
+            "plugin_id": "langgenius/searchapi",
+            "plugins": {
+              "agent_strategies": null,
+              "datasources": null,
+              "endpoints": null,
+              "models": null,
+              "tools": [
+                "provider/searchapi.yaml"
+              ],
+              "triggers": null
+            },
+            "privacy_options": "",
+            "privacy_policy": "",
+            "repository": "",
+            "status": "active",
+            "tags": [
+              {
+                "name": "productivity"
+              },
+              {
+                "name": "search"
+              },
+              {
+                "name": "business"
+              },
+              {
+                "name": "news"
+              }
+            ],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "langgenius"
+            },
+            "version_updated_at": "2026-07-29T07:52:43Z"
+          }
+        ],
+        "total": 69
+      },
+      "msg": "ok"
+    }
+  }
+}

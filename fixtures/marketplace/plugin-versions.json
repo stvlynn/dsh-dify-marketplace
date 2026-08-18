@@ -1,0 +1,177 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/plugins/langgenius/google/versions?page=1&page_size=5",
+    "headers": {
+      "X-Dify-Version": "1.10.0",
+      "User-Agent": "<browser user agent>"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "versions": [
+          {
+            "plugin_org": "langgenius",
+            "plugin_name": "google",
+            "version": "0.1.6",
+            "plugin_tuple": "langgenius/google:0.1.6",
+            "change_log": "",
+            "checksum": "f9bdc225b84abfaca4865e7d71b503410fb40b8bd7e23b9f7d2b49554f906260",
+            "created_at": "2026-07-22T12:23:00.574876Z",
+            "unique_identifier": "langgenius/google:0.1.6@f9bdc225b84abfaca4865e7d71b503410fb40b8bd7e23b9f7d2b49554f906260",
+            "minimum_dify_version_major": 1,
+            "minimum_dify_version_minor": 0,
+            "minimum_dify_version_patch": 0,
+            "status": "active"
+          },
+          {
+            "plugin_org": "langgenius",
+            "plugin_name": "google",
+            "version": "0.1.5",
+            "plugin_tuple": "langgenius/google:0.1.5",
+            "change_log": "",
+            "checksum": "cbe3d3ef2530384c1d23653e6b3f6d527839db2dc60a47a0c14ac774f0bbe856",
+            "created_at": "2026-05-27T13:14:32.106428Z",
+            "unique_identifier": "langgenius/google:0.1.5@cbe3d3ef2530384c1d23653e6b3f6d527839db2dc60a47a0c14ac774f0bbe856",
+            "minimum_dify_version_major": 1,
+            "minimum_dify_version_minor": 0,
+            "minimum_dify_version_patch": 0,
+            "status": "active"
+          },
+          {
+            "plugin_org": "langgenius",
+            "plugin_name": "google",
+            "version": "0.1.3",
+            "plugin_tuple": "langgenius/google:0.1.3",
+            "change_log": "",
+            "checksum": "d3e746582e9401277fe792abf5daed172d11af17b56769a53f642d7d777cfd7a",
+            "created_at": "2026-04-27T07:55:34.20679Z",
+            "unique_identifier": "langgenius/google:0.1.3@d3e746582e9401277fe792abf5daed172d11af17b56769a53f642d7d777cfd7a",
+            "minimum_dify_version_major": 1,
+            "minimum_dify_version_minor": 0,
+            "minimum_dify_version_patch": 0,
+            "status": "active"
+          },
+          {
+            "plugin_org": "langgenius",
+            "plugin_name": "google",
+            "version": "0.1.1",
+            "plugin_tuple": "langgenius/google:0.1.1",
+            "change_log": "",
+            "checksum": "d6d49d40fc891331828f4647c95f63f225badf34b6bf634b526d3b72c0ca3b77",
+            "created_at": "2026-03-26T08:41:22.182371Z",
+            "unique_identifier": "langgenius/google:0.1.1@d6d49d40fc891331828f4647c95f63f225badf34b6bf634b526d3b72c0ca3b77",
+            "minimum_dify_version_major": 1,
+            "minimum_dify_version_minor": 0,
+            "minimum_dify_version_patch": 0,
+            "status": "active"
+          },
+          {
+            "plugin_org": "langgenius",
+            "plugin_name": "google",
+            "version": "0.0.9",
+            "plugin_tuple": "langgenius/google:0.0.9",
+            "change_log": "",
+            "checksum": "d360bbc433f39be1b11909cb9c32e6be4a17ea06af083f9e1c7613bb802bf517",
+            "created_at": "2025-05-12T01:48:05.893584Z",
+            "unique_identifier": "langgenius/google:0.0.9@d360bbc433f39be1b11909cb9c32e6be4a17ea06af083f9e1c7613bb802bf517",
+            "minimum_dify_version_major": 1,
+            "minimum_dify_version_minor": 0,
+            "minimum_dify_version_patch": 0,
+            "status": "active"
+          },
+          {
+            "plugin_org": "langgenius",
+            "plugin_name": "google",
+            "version": "0.0.8",
+            "plugin_tuple": "langgenius/google:0.0.8",
+            "change_log": "",
+            "checksum": "07d3cba3a2540064cbffb2ae925bdc6640ff6d3b6aaebc5ed2347a1a1fca1210",
+            "created_at": "2025-02-17T07:07:33.036108Z",
+            "unique_identifier": "langgenius/google:0.0.8@07d3cba3a2540064cbffb2ae925bdc6640ff6d3b6aaebc5ed2347a1a1fca1210",
+            "minimum_dify_version_major": 1,
+            "minimum_dify_version_minor": 0,
+            "minimum_dify_version_patch": 0,
+            "status": "active"
+          },
+          {
+            "plugin_org": "langgenius",
+            "plugin_name": "google",
+            "version": "0.0.7",
+            "plugin_tuple": "langgenius/google:0.0.7",
+            "change_log": "",
+            "checksum": "388187bdaccc564303743111181466e428d20f90be2bd2d7604397414e5baba0",
+            "created_at": "2025-01-21T13:19:55.214826Z",
+            "unique_identifier": "langgenius/google:0.0.7@388187bdaccc564303743111181466e428d20f90be2bd2d7604397414e5baba0",
+            "minimum_dify_version_major": 1,
+            "minimum_dify_version_minor": 0,
+            "minimum_dify_version_patch": 0,
+            "status": "active"
+          },
+          {
+            "plugin_org": "langgenius",
+            "plugin_name": "google",
+            "version": "0.0.6",
+            "plugin_tuple": "langgenius/google:0.0.6",
+            "change_log": "",
+            "checksum": "00fa186292d016ea43658e6f6eff04787dd093acad1c6b81c7196aee95b76302",
+            "created_at": "2025-01-08T10:53:39.760544Z",
+            "unique_identifier": "langgenius/google:0.0.6@00fa186292d016ea43658e6f6eff04787dd093acad1c6b81c7196aee95b76302",
+            "minimum_dify_version_major": 1,
+            "minimum_dify_version_minor": 0,
+            "minimum_dify_version_patch": 0,
+            "status": "active"
+          },
+          {
+            "plugin_org": "langgenius",
+            "plugin_name": "google",
+            "version": "0.0.4",
+            "plugin_tuple": "langgenius/google:0.0.4",
+            "change_log": "",
+            "checksum": "85482d57d4c4cafd3ba950233e979ba436522658c22a4b3fc05cd4afb097ece4",
+            "created_at": "2024-11-22T08:08:20.733542Z",
+            "unique_identifier": "langgenius/google:0.0.4@85482d57d4c4cafd3ba950233e979ba436522658c22a4b3fc05cd4afb097ece4",
+            "minimum_dify_version_major": 1,
+            "minimum_dify_version_minor": 0,
+            "minimum_dify_version_patch": 0,
+            "status": "active"
+          },
+          {
+            "plugin_org": "langgenius",
+            "plugin_name": "google",
+            "version": "0.0.3",
+            "plugin_tuple": "langgenius/google:0.0.3",
+            "change_log": "",
+            "checksum": "0b4fce6282e9224b6bf3a6de17816610c9957b115a2d04c81bc59e2ed41e1479",
+            "created_at": "2024-11-22T08:08:12.460234Z",
+            "unique_identifier": "langgenius/google:0.0.3@0b4fce6282e9224b6bf3a6de17816610c9957b115a2d04c81bc59e2ed41e1479",
+            "minimum_dify_version_major": 1,
+            "minimum_dify_version_minor": 0,
+            "minimum_dify_version_patch": 0,
+            "status": "active"
+          },
+          {
+            "plugin_org": "langgenius",
+            "plugin_name": "google",
+            "version": "0.0.2",
+            "plugin_tuple": "langgenius/google:0.0.2",
+            "change_log": "",
+            "checksum": "b59143dddaaba28f48b2a6fcb1230114cb893a3a1cd41f4813c8a1ecb26694dd",
+            "created_at": "2024-11-22T08:07:42.229977Z",
+            "unique_identifier": "langgenius/google:0.0.2@b59143dddaaba28f48b2a6fcb1230114cb893a3a1cd41f4813c8a1ecb26694dd",
+            "minimum_dify_version_major": 1,
+            "minimum_dify_version_minor": 0,
+            "minimum_dify_version_patch": 0,
+            "status": "active"
+          }
+        ]
+      },
+      "msg": "ok"
+    }
+  }
+}

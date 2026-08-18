@@ -1,0 +1,16 @@
+identity:
+  author: dsh
+  name: hello
+  label:
+    en_US: Hello
+    zh_Hans: 你好
+  description:
+    en_US: Echo provider
+    zh_Hans: 回声提供者
+  icon: icon.svg
+credentials_for_provider: {}
+tools:
+  - tools/echo.yaml
+extra:
+  python:
+    source: provider/hello.py

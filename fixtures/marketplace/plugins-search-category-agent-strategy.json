@@ -1,0 +1,158 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/plugins/search/advanced",
+    "headers": {
+      "X-Dify-Version": "1.10.0",
+      "User-Agent": "<browser user agent>"
+    },
+    "body": {
+      "page": 1,
+      "page_size": 3,
+      "query": "",
+      "category": "agent-strategy",
+      "tags": []
+    }
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "plugins": [
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "An advanced dialogue agent optimized for conversational scenarios",
+              "zh_Hans": "针对对话场景优化的Agent策略，例如：多轮对话、上下文理解、信息收集等"
+            },
+            "category": "agent-strategy",
+            "icon": "svcvit/packages/agent/_assets/icon.svg",
+            "index_id": "svcvit___agent",
+            "install_count": 52318,
+            "label": {
+              "en_US": "Dialogue Agent",
+              "zh_Hans": "对话 Agent"
+            },
+            "latest_package_identifier": "svcvit/agent:0.0.4@da10dd8bc6c029f1e3bdfea8cf44ba91a37233a2ab59188c5b663d5c8ce4db7e",
+            "latest_version": "0.0.4",
+            "name": "agent",
+            "org": "svcvit",
+            "plugin_id": "svcvit/agent",
+            "plugins": {
+              "agent_strategies": [
+                "provider/agent.yaml"
+              ],
+              "endpoints": null,
+              "models": null,
+              "tools": null
+            },
+            "privacy_options": "",
+            "privacy_policy": "PRIVACY.md",
+            "repository": "",
+            "status": "active",
+            "tags": [
+              {
+                "name": "agent"
+              }
+            ],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "community"
+            },
+            "version_updated_at": "2025-04-24T10:05:10Z"
+          },
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "Dify official Agent strategies collection",
+              "zh_Hans": "Dify 官方 Agent 策略集合"
+            },
+            "category": "agent-strategy",
+            "icon": "langgenius/packages/agent/_assets/icon.svg",
+            "index_id": "langgenius___agent",
+            "install_count": 613466,
+            "label": {
+              "en_US": "Dify Agent Strategies",
+              "zh_Hans": "Dify Agent 策略"
+            },
+            "latest_package_identifier": "langgenius/agent:0.0.44@49111ed5262e26b6bab6b5267888097d15596389d054fabb493871b963efcf22",
+            "latest_version": "0.0.44",
+            "name": "agent",
+            "org": "langgenius",
+            "plugin_id": "langgenius/agent",
+            "plugins": {
+              "agent_strategies": [
+                "provider/agent.yaml"
+              ],
+              "datasources": null,
+              "endpoints": null,
+              "models": null,
+              "tools": null,
+              "triggers": null
+            },
+            "privacy_options": "",
+            "privacy_policy": "",
+            "repository": null,
+            "status": "active",
+            "tags": [
+              {
+                "name": "agent"
+              }
+            ],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "langgenius"
+            },
+            "version_updated_at": "2026-08-18T06:01:34Z"
+          },
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "An agent strategy with MCP tool calls and common function calls.",
+              "zh_Hans": "支持 MCP 工具调用和 function call 的 Agent 策略。"
+            },
+            "category": "agent-strategy",
+            "icon": "hjlarry/packages/agent/_assets/icon.svg",
+            "index_id": "hjlarry___agent",
+            "install_count": 55887,
+            "label": {
+              "en_US": "MCP Agent Strategy",
+              "zh_Hans": "MCP Agent 策略"
+            },
+            "latest_package_identifier": "hjlarry/agent:0.0.1@a49e68ba2d0ddafda481fdff7d65426fb43e4bcb3522e648475379996d7680dd",
+            "latest_version": "0.0.1",
+            "name": "agent",
+            "org": "hjlarry",
+            "plugin_id": "hjlarry/agent",
+            "plugins": {
+              "agent_strategies": [
+                "provider/mcp_agent.yaml"
+              ],
+              "endpoints": null,
+              "models": null,
+              "tools": null
+            },
+            "privacy_options": "",
+            "privacy_policy": "",
+            "repository": "",
+            "status": "active",
+            "tags": [
+              {
+                "name": "agent"
+              }
+            ],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "community"
+            },
+            "version_updated_at": "2025-03-14T11:45:15Z"
+          }
+        ],
+        "total": 11
+      },
+      "msg": "ok"
+    }
+  }
+}

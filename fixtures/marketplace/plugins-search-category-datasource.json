@@ -1,0 +1,162 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/plugins/search/advanced",
+    "headers": {
+      "X-Dify-Version": "1.10.0",
+      "User-Agent": "<browser user agent>"
+    },
+    "body": {
+      "page": 1,
+      "page_size": 3,
+      "query": "",
+      "category": "datasource",
+      "tags": []
+    }
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "plugins": [
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "Google Drive Datasource",
+              "zh_Hans": "Google Drive 数据源"
+            },
+            "category": "datasource",
+            "icon": "langgenius/packages/google_drive/_assets/icon.svg",
+            "index_id": "langgenius___google_drive",
+            "install_count": 63357,
+            "label": {
+              "en_US": "Google Drive",
+              "zh_Hans": "Google Drive"
+            },
+            "latest_package_identifier": "langgenius/google_drive:0.1.13@5532477e83e72c77f80fe10df883fdaf25d32bbe9411607b725ff911c7d6ca7a",
+            "latest_version": "0.1.13",
+            "name": "google_drive",
+            "org": "langgenius",
+            "plugin_id": "langgenius/google_drive",
+            "plugins": {
+              "agent_strategies": null,
+              "datasources": [
+                "provider/google_drive.yaml"
+              ],
+              "endpoints": null,
+              "models": null,
+              "tools": null,
+              "triggers": null
+            },
+            "privacy_options": "",
+            "privacy_policy": "",
+            "repository": null,
+            "status": "active",
+            "tags": [
+              {
+                "name": "rag"
+              }
+            ],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "langgenius"
+            },
+            "version_updated_at": "2026-08-13T14:07:00Z"
+          },
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "SharePoint Datasource",
+              "zh_Hans": "SharePoint 数据源"
+            },
+            "category": "datasource",
+            "icon": "langgenius/packages/sharepoint_datasource/_assets/icon.svg",
+            "index_id": "langgenius___sharepoint_datasource",
+            "install_count": 11162,
+            "label": {
+              "en_US": "SharePoint",
+              "zh_Hans": "SharePoint"
+            },
+            "latest_package_identifier": "langgenius/sharepoint_datasource:1.0.0@fd3d1c88aba11033f84981667a4a98f35fec7720e6e71cceb7bfac3edf90b296",
+            "latest_version": "1.0.0",
+            "name": "sharepoint_datasource",
+            "org": "langgenius",
+            "plugin_id": "langgenius/sharepoint_datasource",
+            "plugins": {
+              "agent_strategies": null,
+              "datasources": [
+                "provider/sharepoint.yaml"
+              ],
+              "endpoints": null,
+              "models": null,
+              "tools": null,
+              "triggers": null
+            },
+            "privacy_options": "",
+            "privacy_policy": "PRIVACY.md",
+            "repository": null,
+            "status": "active",
+            "tags": [
+              {
+                "name": "rag"
+              }
+            ],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "langgenius"
+            },
+            "version_updated_at": "2026-08-13T14:07:04Z"
+          },
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "gokuai yunku Datasource",
+              "zh_Hans": "够快云库数据源"
+            },
+            "category": "datasource",
+            "icon": "gokuai/packages/yunku_datasource/_assets/icon.svg",
+            "index_id": "gokuai___yunku_datasource",
+            "install_count": 193,
+            "label": {
+              "en_US": "gokuai yunku",
+              "zh_Hans": "够快云库"
+            },
+            "latest_package_identifier": "gokuai/yunku_datasource:0.0.1@fa285f1c14a688bdf787ee9808fce1e1b60d15c5ed174a23171cb6248e9dd3e8",
+            "latest_version": "0.0.1",
+            "name": "yunku_datasource",
+            "org": "gokuai",
+            "plugin_id": "gokuai/yunku_datasource",
+            "plugins": {
+              "agent_strategies": null,
+              "datasources": [
+                "provider/yunku.yaml"
+              ],
+              "endpoints": null,
+              "models": null,
+              "tools": null,
+              "triggers": null
+            },
+            "privacy_options": "",
+            "privacy_policy": "PRIVACY.md",
+            "repository": null,
+            "status": "active",
+            "tags": [
+              {
+                "name": "rag"
+              }
+            ],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "community"
+            },
+            "version_updated_at": "2025-11-24T06:03:46Z"
+          }
+        ],
+        "total": 29
+      },
+      "msg": "ok"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+identity:
+  name: echo
+  author: dsh
+  label:
+    en_US: Echo
+    zh_Hans: 回声
+description:
+  human:
+    en_US: Echo the input text with a prefix.
+    zh_Hans: 将输入文本加上前缀后返回。
+  llm: Echo the input text. Returns echo:<text>.
+parameters:
+  - name: text
+    type: string
+    required: true
+    label:
+      en_US: Text
+      zh_Hans: 文本
+    human_description:
+      en_US: Text to echo
+      zh_Hans: 要回声的文本
+    llm_description: The text to echo back.
+    form: llm
+extra:
+  python:
+    source: tools/echo.py

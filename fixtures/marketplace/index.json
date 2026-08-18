@@ -1,0 +1,101 @@
+{
+  "baseUrl": "https://marketplace.dify.ai",
+  "difyVersionHeader": "1.10.0",
+  "captures": [
+    {
+      "file": "plugins-search-advanced.json",
+      "status": 200,
+      "path": "/api/v1/plugins/search/advanced"
+    },
+    {
+      "file": "plugins-search-category-tool.json",
+      "status": 200,
+      "path": "/api/v1/plugins/search/advanced"
+    },
+    {
+      "file": "plugins-search-category-model.json",
+      "status": 200,
+      "path": "/api/v1/plugins/search/advanced"
+    },
+    {
+      "file": "plugins-search-category-datasource.json",
+      "status": 200,
+      "path": "/api/v1/plugins/search/advanced"
+    },
+    {
+      "file": "plugins-search-category-trigger.json",
+      "status": 200,
+      "path": "/api/v1/plugins/search/advanced"
+    },
+    {
+      "file": "plugins-search-category-agent-strategy.json",
+      "status": 200,
+      "path": "/api/v1/plugins/search/advanced"
+    },
+    {
+      "file": "plugins-search-category-extension.json",
+      "status": 200,
+      "path": "/api/v1/plugins/search/advanced"
+    },
+    {
+      "file": "plugins-search-tags.json",
+      "status": 200,
+      "path": "/api/v1/plugins/search/advanced"
+    },
+    {
+      "file": "plugin-detail-unknown.json",
+      "status": 404,
+      "path": "/api/v1/plugins/langgenius/this-plugin-does-not-exist"
+    },
+    {
+      "file": "bundles-search-advanced.json",
+      "status": 200,
+      "path": "/api/v1/bundles/search/advanced"
+    },
+    {
+      "file": "collections.json",
+      "status": 200,
+      "path": "/api/v1/collections?page=1&page_size=100"
+    },
+    {
+      "file": "plugin-detail.json",
+      "status": 200,
+      "path": "/api/v1/plugins/langgenius/google"
+    },
+    {
+      "file": "plugin-versions.json",
+      "status": 200,
+      "path": "/api/v1/plugins/langgenius/google/versions?page=1&page_size=5"
+    },
+    {
+      "file": "plugins-batch.json",
+      "status": 200,
+      "path": "/api/v1/plugins/batch"
+    },
+    {
+      "file": "stats-install-count-invalid.json",
+      "status": 400,
+      "path": "/api/v1/stats/plugins/install_count"
+    },
+    {
+      "file": "collection-plugins.json",
+      "status": 200,
+      "path": "/api/v1/collections/partners/plugins"
+    },
+    {
+      "file": "plugin-icon.json",
+      "status": 200,
+      "path": "/api/v1/plugins/langgenius/google/icon"
+    },
+    {
+      "file": "plugin-download-url.json",
+      "status": 302,
+      "path": "/api/v1/plugins/download-url?unique_identifier=langgenius%2Fgoogle%3A0.1.6%40f9bdc225b84abfaca4865e7d71b503410fb40b8bd7e23b9f7d2b49554f906260"
+    },
+    {
+      "file": "dist-plugins-manifest.json",
+      "status": 200,
+      "path": "/api/v1/dist/plugins/manifest.json"
+    }
+  ]
+}

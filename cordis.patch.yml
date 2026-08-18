@@ -1,0 +1,6 @@
+# Bundle patch: inserts this plugin into a profile's layer stack.
+# Row id is stable. `name` must match package.json "name".
+- insert:
+    - id: dsh-dify-marketplace
+      name: dsh-dify-marketplace
+      inject: [tools, webServer]

@@ -1,0 +1,165 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/plugins/search/advanced",
+    "headers": {
+      "X-Dify-Version": "1.10.0",
+      "User-Agent": "<browser user agent>"
+    },
+    "body": {
+      "page": 1,
+      "page_size": 3,
+      "query": "",
+      "category": "tool",
+      "tags": []
+    }
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "plugins": [
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "Tools for processing JSON content using jsonpath_ng",
+              "pt_BR": "Tools for processing JSON content using jsonpath_ng",
+              "zh_Hans": "利用 jsonpath_ng 处理 JSON 内容的工具"
+            },
+            "category": "tool",
+            "icon": "langgenius/packages/json_process/_assets/icon.svg",
+            "index_id": "langgenius___json_process",
+            "install_count": 252879,
+            "label": {
+              "en_US": "JSON Process",
+              "pt_BR": "JSON Process",
+              "zh_Hans": "JSON 处理"
+            },
+            "latest_package_identifier": "langgenius/json_process:0.0.7@9e7bcf56ce212474e1ab19c8ea7d3f6625883c74979ba999ad8584e1d5b6c40b",
+            "latest_version": "0.0.7",
+            "name": "json_process",
+            "org": "langgenius",
+            "plugin_id": "langgenius/json_process",
+            "plugins": {
+              "agent_strategies": null,
+              "datasources": null,
+              "endpoints": null,
+              "models": null,
+              "tools": [
+                "provider/json_process.yaml"
+              ],
+              "triggers": null
+            },
+            "privacy_options": "",
+            "privacy_policy": "",
+            "repository": "",
+            "status": "active",
+            "tags": [
+              {
+                "name": "utilities"
+              }
+            ],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "langgenius"
+            },
+            "version_updated_at": "2026-07-21T01:52:52Z"
+          },
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "Tool to get OHLC and volume values for Indian stocks",
+              "ja_JP": "Tool to get OHLC and volume values for Indian stocks",
+              "pt_BR": "Tool to get OHLC and volume values for Indian stocks",
+              "zh_Hans": "Tool to get OHLC and volume values for Indian stocks"
+            },
+            "category": "tool",
+            "icon": "diya8/packages/indianstock/_assets/indianstock.svg",
+            "index_id": "diya8___indianstock",
+            "install_count": 87,
+            "label": {
+              "en_US": "Indian Stock Values",
+              "ja_JP": "Indian Stock Values",
+              "pt_BR": "Indian Stock Values",
+              "zh_Hans": "Indian Stock Values"
+            },
+            "latest_package_identifier": "diya8/indianstock:0.0.1@e460ce4ce23509e44fe91438aac6103b295745253e5fc2c96c855b60902a9c89",
+            "latest_version": "0.0.1",
+            "name": "indianstock",
+            "org": "diya8",
+            "plugin_id": "diya8/indianstock",
+            "plugins": {
+              "agent_strategies": null,
+              "datasources": null,
+              "endpoints": null,
+              "models": null,
+              "tools": [
+                "provider/indianstock.yaml"
+              ],
+              "triggers": null
+            },
+            "privacy_options": "",
+            "privacy_policy": "PRIVACY.md",
+            "repository": null,
+            "status": "active",
+            "tags": [],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "community"
+            },
+            "version_updated_at": "2025-11-24T06:00:04Z"
+          },
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "Access Crawl4AI capabilities to extract content from web pages, etc, return markdown or html format",
+              "zh_Hans": "通过API接口访问Crawl4AI的网页内容提取、数据解析和结构化处理等功能，实现高效的网络信息采集，返回markdown或者html格式"
+            },
+            "category": "tool",
+            "icon": "agimaster/packages/crawl4ai/_assets/icon.svg",
+            "index_id": "agimaster___crawl4ai",
+            "install_count": 6825,
+            "label": {
+              "en_US": "Crawl4AI",
+              "zh_Hans": "Crawl4AI"
+            },
+            "latest_package_identifier": "agimaster/crawl4ai:0.0.3@e424e44e9b783e3bc589982d2d0fbcb650830bd2df85ca4fc7255d77648b8a26",
+            "latest_version": "0.0.3",
+            "name": "crawl4ai",
+            "org": "agimaster",
+            "plugin_id": "agimaster/crawl4ai",
+            "plugins": {
+              "agent_strategies": null,
+              "endpoints": null,
+              "models": null,
+              "tools": [
+                "provider/crawl4ai.yaml"
+              ]
+            },
+            "privacy_options": "",
+            "privacy_policy": "privacy.md",
+            "repository": "",
+            "status": "active",
+            "tags": [
+              {
+                "name": "productivity"
+              },
+              {
+                "name": "search"
+              }
+            ],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "community"
+            },
+            "version_updated_at": "2025-06-06T01:28:47Z"
+          }
+        ],
+        "total": 688
+      },
+      "msg": "ok"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/plugins/langgenius/google/icon"
+  },
+  "response": {
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "byteLength": 1181,
+    "bodyNote": "binary image body is intentionally not stored"
+  }
+}

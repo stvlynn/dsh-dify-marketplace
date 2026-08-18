@@ -1,0 +1,32 @@
+version: 0.0.1
+type: plugin
+author: dsh
+name: hello
+label:
+  en_US: Hello Echo
+  zh_Hans: Hello 回声
+description:
+  en_US: Echo tool used by dsh-dify-marketplace end-to-end tests.
+  zh_Hans: dsh-dify-marketplace 端到端测试使用的回声工具。
+icon: icon.svg
+icon_dark: icon.svg
+resource:
+  memory: 1048576
+  permission:
+    tool:
+      enabled: true
+plugins:
+  tools:
+    - provider/hello.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2024-01-01T00:00:00.000000Z
+privacy: PRIVACY.md
+verified: false

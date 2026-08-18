@@ -1,0 +1,585 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/plugins/langgenius/google",
+    "headers": {
+      "X-Dify-Version": "1.10.0",
+      "User-Agent": "<browser user agent>"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "plugin": {
+          "type": "plugin",
+          "name": "google",
+          "org": "langgenius",
+          "plugin_id": "langgenius/google",
+          "icon": "langgenius/packages/google/_assets/icon.svg",
+          "label": {
+            "en_US": "Google"
+          },
+          "brief": {
+            "en_US": "A tool for performing a Google SERP search and extracting snippets and webpages.Input should be a search query.",
+            "zh_Hans": "一个用于执行 Google SERP 搜索并提取片段和网页的工具。输入应该是一个搜索查询。"
+          },
+          "introduction": "# Google Search\n\n## Overview\n\nThe Google Search tool is a real-time API that extracts search engine results, providing structured data from Google. It supports various search types, including web, image, news, and maps.\n\n## Configuration\n\n### 1. Apply for an API Key\n\nPlease apply for an API Key on the [SerpApi](https://serpapi.com/dashboard).\n\n![](./_assets/google_3.png)\n\n### 2. Get Google tools from Plugin Marketplace\n\nThe Google tools could be found at the Plugin Marketplace, please install it first.\n\n### 3. Fill in the configuration in Dify\n\nOn the Dify navigation page, click `Tools > Google > To authorize` filling in the API Key.\n\n![](./_assets/google_1.png)\n\n### 4. Use the tool\n\nYou can use the Google tool in the following application types:\n\n![](./_assets/google_2.png)\n\n#### Chatflow / Workflow applications\n\nBoth Chatflow and Workflow applications support adding a Google tool node.\n\n#### Agent applications\n\nAdd the Google tool in the Agent application, then enter online search instructions to call this tool.",
+          "readme_meta": {
+            "available_languages": [
+              "en_US"
+            ]
+          },
+          "category": "tool",
+          "repository": "",
+          "resource": {
+            "memory": 1048576,
+            "permission": {
+              "model": {
+                "enabled": true,
+                "llm": true,
+                "moderation": false,
+                "rerank": false,
+                "speech2text": false,
+                "text_embedding": false,
+                "tts": false
+              },
+              "tool": {
+                "enabled": true
+              }
+            }
+          },
+          "privacy_options": "",
+          "privacy_policy": "",
+          "created_at": "2024-12-05T13:13:45.167269Z",
+          "updated_at": "2026-07-22T12:23:00.572677Z",
+          "badges": [],
+          "verification": {
+            "authorized_category": "langgenius"
+          },
+          "minimum_dify_version_major": 1,
+          "minimum_dify_version_minor": 0,
+          "minimum_dify_version_patch": 0,
+          "plugins": {
+            "agent_strategies": null,
+            "datasources": null,
+            "endpoints": null,
+            "models": null,
+            "tools": [
+              "provider/google.yaml"
+            ],
+            "triggers": null
+          },
+          "endpoint": {},
+          "model": {},
+          "tool": {
+            "credentials_schema": [
+              {
+                "default": null,
+                "help": {
+                  "en_US": "Get your SerpApi API key from SerpApi",
+                  "pt_BR": "Get your SerpApi API key from SerpApi",
+                  "zh_Hans": "从 SerpApi 获取您的 SerpApi API key"
+                },
+                "label": {
+                  "en_US": "SerpApi API key",
+                  "pt_BR": "SerpApi API key",
+                  "zh_Hans": "SerpApi API key"
+                },
+                "multiple": false,
+                "name": "serpapi_api_key",
+                "options": null,
+                "placeholder": {
+                  "en_US": "Please input your SerpApi API key",
+                  "pt_BR": "Please input your SerpApi API key",
+                  "zh_Hans": "请输入你的 SerpApi API key"
+                },
+                "required": true,
+                "scope": null,
+                "type": "secret-input",
+                "url": "https://serpapi.com/manage-api-key"
+              }
+            ],
+            "identity": {
+              "author": "Dify",
+              "description": {
+                "en_US": "Google",
+                "pt_BR": "Google",
+                "zh_Hans": "GoogleSearch"
+              },
+              "icon": "icon.svg",
+              "icon_dark": "",
+              "label": {
+                "en_US": "Google",
+                "pt_BR": "Google",
+                "zh_Hans": "Google"
+              },
+              "name": "google",
+              "tags": [
+                "search"
+              ]
+            },
+            "oauth_schema": null,
+            "tools": [
+              {
+                "description": {
+                  "human": {
+                    "en_US": "A tool for performing a Google SERP search and extracting snippets and webpages.Input should be a search query.",
+                    "pt_BR": "A tool for performing a Google SERP search and extracting snippets and webpages.Input should be a search query.",
+                    "zh_Hans": "一个用于执行 Google SERP 搜索并提取片段和网页的工具。输入应该是一个搜索查询。"
+                  },
+                  "llm": "A tool for performing a Google SERP search and extracting snippets and webpages.Input should be a search query."
+                },
+                "has_runtime_parameters": false,
+                "identity": {
+                  "author": "Dify",
+                  "label": {
+                    "en_US": "GoogleSearch",
+                    "pt_BR": "GoogleSearch",
+                    "zh_Hans": "谷歌搜索"
+                  },
+                  "name": "google_search"
+                },
+                "parameters": [
+                  {
+                    "auto_generate": null,
+                    "default": null,
+                    "form": "llm",
+                    "human_description": {
+                      "en_US": "used for searching",
+                      "pt_BR": "used for searching",
+                      "zh_Hans": "用于搜索网页内容"
+                    },
+                    "label": {
+                      "en_US": "Query string",
+                      "pt_BR": "Query string",
+                      "zh_Hans": "查询语句"
+                    },
+                    "llm_description": "keywords for searching",
+                    "max": null,
+                    "min": null,
+                    "name": "query",
+                    "options": null,
+                    "precision": null,
+                    "required": true,
+                    "scope": null,
+                    "template": null,
+                    "type": "string"
+                  },
+                  {
+                    "auto_generate": null,
+                    "default": null,
+                    "form": "llm",
+                    "human_description": {
+                      "en_US": "Parameter defines the language to use for the Google search. It's a two-letter language code. (e.g., en for English, es for Spanish, or fr for French). Head to https://serpapi.com/google-languages for a full list of supported Google languages.",
+                      "pt_BR": "Parameter defines the language to use for the Google search. It's a two-letter language code. (e.g., en for English, es for Spanish, or fr for French). Head to https://serpapi.com/google-languages for a full list of supported Google languages.",
+                      "zh_Hans": "此参数定义用于 Google 搜索的语言。它是一个两字母的语言代码。 (例如，en 代表英语，es 代表西班牙语，fr 代表法语)。请前往 https://serpapi.com/google-languages 查看完整的支持 Google 语言列表。"
+                    },
+                    "label": {
+                      "en_US": "Language code",
+                      "pt_BR": "Language code",
+                      "zh_Hans": "语言代码"
+                    },
+                    "llm_description": "(Optional) This parameter specifies the language used for Google searches. In most cases, you don't need to explicitly specify this parameter. Some effective examples: zh-cn, en, ja.",
+                    "max": null,
+                    "min": null,
+                    "name": "language_code",
+                    "options": null,
+                    "precision": null,
+                    "required": false,
+                    "scope": null,
+                    "template": null,
+                    "type": "string"
+                  },
+                  {
+                    "auto_generate": null,
+                    "default": null,
+                    "form": "llm",
+                    "human_description": {
+                      "en_US": "Parameter defines the country to use for the Google search. It's a two-letter country code. (e.g., us for the United States, uk for United Kingdom, or fr for France). Head to the https://serpapi.com/google-countries for a full list of supported Google countries.",
+                      "pt_BR": "Parameter defines the country to use for the Google search. It's a two-letter country code. (e.g., us for the United States, uk for United Kingdom, or fr for France). Head to the https://serpapi.com/google-countries for a full list of supported Google countries.",
+                      "zh_Hans": "此参数定义用于 Google 搜索的国家。它是一个两字母的国家代码。 (例如，us 代表美国，uk 代表英国，fr 代表法国)。请前往 https://serpapi.com/google-countries 查看完整的支持 Google 国家列表。"
+                    },
+                    "label": {
+                      "en_US": "Country code",
+                      "pt_BR": "Country code",
+                      "zh_Hans": "国家代码"
+                    },
+                    "llm_description": "(Optional) This parameter defines the country used for Google search. In most cases, you don't need to explicitly specify this parameter. Some effective examples: cn, us, uk, jp.",
+                    "max": null,
+                    "min": null,
+                    "name": "country_code",
+                    "options": null,
+                    "precision": null,
+                    "required": false,
+                    "scope": null,
+                    "template": null,
+                    "type": "string"
+                  },
+                  {
+                    "auto_generate": null,
+                    "default": false,
+                    "form": "form",
+                    "human_description": {
+                      "en_US": "Default is False. The node behaves differently in workflow/chatflow calls versus when used as a tool within an Agent, resulting in different return formats. In Agent mode, the context template is optimized to clearly highlight key information. Make sure to enable this parameter when using the Agent mode.",
+                      "pt_BR": "Default is False. The node behaves differently in workflow/chatflow calls versus when used as a tool within an Agent, resulting in different return formats. In Agent mode, the context template is optimized to clearly highlight key information. Make sure to enable this parameter when using the Agent mode.",
+                      "zh_Hans": "默认为 False，直接在 workflow 或 chatflow 中调用还是在 Agent 中作为工具使用，两种模式触发不同的返回格式。在 Agent 模式下，优化上下文模板，明确关键信息。 在 Agent 模式下请务必启动这个参数。"
+                    },
+                    "label": {
+                      "en_US": "Used in Agent nodes",
+                      "pt_BR": "Used in Agent nodes",
+                      "zh_Hans": "在 Agent 节点中使用"
+                    },
+                    "llm_description": "Default is False. The node behaves differently in workflow/chatflow calls versus when used as a tool within an Agent, resulting in different return formats. In Agent mode, the context template is optimized to clearly highlight key information. Make sure to enable this parameter when using the Agent mode.",
+                    "max": null,
+                    "min": null,
+                    "name": "as_agent_tool",
+                    "options": null,
+                    "precision": null,
+                    "required": false,
+                    "scope": null,
+                    "template": null,
+                    "type": "boolean"
+                  }
+                ]
+              },
+              {
+                "description": {
+                  "human": {
+                    "en_US": "A tool for performing a Google image search and extracting images. Input should be a search query.",
+                    "pt_BR": "A tool for performing a Google image search and extracting images. Input should be a search query.",
+                    "zh_Hans": "一个用于执行 Google 图片搜索并提取图片的工具。输入应该是一个搜索查询。"
+                  },
+                  "llm": "A tool for performing a Google image search and extracting images. Input should be a search query."
+                },
+                "has_runtime_parameters": false,
+                "identity": {
+                  "author": "Ryan Low",
+                  "label": {
+                    "en_US": "Google Image Search",
+                    "pt_BR": "Google Image Search",
+                    "zh_Hans": "谷歌图片搜索"
+                  },
+                  "name": "google_image_search"
+                },
+                "parameters": [
+                  {
+                    "auto_generate": null,
+                    "default": null,
+                    "form": "llm",
+                    "human_description": {
+                      "en_US": "used for searching",
+                      "pt_BR": "used for searching",
+                      "zh_Hans": "用于搜索网页内容"
+                    },
+                    "label": {
+                      "en_US": "Query string",
+                      "pt_BR": "Query string",
+                      "zh_Hans": "查询语句"
+                    },
+                    "llm_description": "key words for searching",
+                    "max": null,
+                    "min": null,
+                    "name": "query",
+                    "options": null,
+                    "precision": null,
+                    "required": true,
+                    "scope": null,
+                    "template": null,
+                    "type": "string"
+                  },
+                  {
+                    "auto_generate": null,
+                    "default": null,
+                    "form": "llm",
+                    "human_description": {
+                      "en_US": "Parameter defines the language to use for the Google search. It's a two-letter language code. (e.g., en for English, es for Spanish, or fr for French). Head to https://serpapi.com/google-languages for a full list of supported Google languages.",
+                      "pt_BR": "Parameter defines the language to use for the Google search. It's a two-letter language code. (e.g., en for English, es for Spanish, or fr for French). Head to https://serpapi.com/google-languages for a full list of supported Google languages.",
+                      "zh_Hans": "此参数定义用于 Google 搜索的语言。它是一个两字母的语言代码。 (例如，en 代表英语，es 代表西班牙语，fr 代表法语)。请前往 https://serpapi.com/google-languages 查看完整的支持 Google 语言列表。"
+                    },
+                    "label": {
+                      "en_US": "Language",
+                      "pt_BR": "Language",
+                      "zh_Hans": "语言"
+                    },
+                    "llm_description": "Language",
+                    "max": null,
+                    "min": null,
+                    "name": "hl",
+                    "options": null,
+                    "precision": null,
+                    "required": false,
+                    "scope": null,
+                    "template": null,
+                    "type": "string"
+                  },
+                  {
+                    "auto_generate": null,
+                    "default": null,
+                    "form": "llm",
+                    "human_description": {
+                      "en_US": "Parameter defines the country to use for the Google search. It's a two-letter country code. (e.g., us for the United States, uk for United Kingdom, or fr for France). Head to the https://serpapi.com/google-countries for a full list of supported Google countries.",
+                      "pt_BR": "Parameter defines the country to use for the Google search. It's a two-letter country code. (e.g., us for the United States, uk for United Kingdom, or fr for France). Head to the https://serpapi.com/google-countries for a full list of supported Google countries.",
+                      "zh_Hans": "此参数定义用于 Google 搜索的国家。它是一个两字母的国家代码。 (例如，us 代表美国，uk 代表英国，fr 代表法国)。请前往 https://serpapi.com/google-countries 查看完整的支持 Google 国家列表。"
+                    },
+                    "label": {
+                      "en_US": "Country",
+                      "pt_BR": "Country",
+                      "zh_Hans": "国家"
+                    },
+                    "llm_description": "Country",
+                    "max": null,
+                    "min": null,
+                    "name": "gl",
+                    "options": null,
+                    "precision": null,
+                    "required": false,
+                    "scope": null,
+                    "template": null,
+                    "type": "string"
+                  },
+                  {
+                    "auto_generate": null,
+                    "default": null,
+                    "form": "llm",
+                    "human_description": {
+                      "en_US": "Parameter defines from where you want the search to originate. If several locations match the location requested, we'll pick the most popular one. Head to the /locations.json API if you need more precise control. The location and uule parameters can't be used together. It is recommended to specify location at the city level in order to simulate a real user’s search. If location is omitted, the search may take on the location of the proxy.",
+                      "pt_BR": "Parameter defines from where you want the search to originate. If several locations match the location requested, we'll pick the most popular one. Head to the /locations.json API if you need more precise control. The location and uule parameters can't be used together. It is recommended to specify location at the city level in order to simulate a real user’s search. If location is omitted, the search may take on the location of the proxy.",
+                      "zh_Hans": "此参数定义搜索的位置。如果有多个位置与请求的位置匹配，我们将选择最受欢迎的一个。如果需要更精确的控制，请前往 /locations.json API。location 和 uule 参数不能同时使用。建议在城市级别指定位置，以模拟真实用户的搜索。如果省略位置，则搜索可能会采用代理的位置。"
+                    },
+                    "label": {
+                      "en_US": "Location",
+                      "pt_BR": "Location",
+                      "zh_Hans": "位置"
+                    },
+                    "llm_description": "Location",
+                    "max": null,
+                    "min": null,
+                    "name": "location",
+                    "options": null,
+                    "precision": null,
+                    "required": false,
+                    "scope": null,
+                    "template": null,
+                    "type": "string"
+                  },
+                  {
+                    "auto_generate": null,
+                    "default": 3,
+                    "form": "form",
+                    "human_description": {
+                      "en_US": "The max results.",
+                      "zh_Hans": "最大结果数量"
+                    },
+                    "label": {
+                      "en_US": "Max results",
+                      "zh_Hans": "最大结果数量"
+                    },
+                    "llm_description": "",
+                    "max": null,
+                    "min": null,
+                    "name": "max_results",
+                    "options": null,
+                    "precision": null,
+                    "required": true,
+                    "scope": null,
+                    "template": null,
+                    "type": "number"
+                  },
+                  {
+                    "auto_generate": null,
+                    "default": "m",
+                    "form": "form",
+                    "human_description": {
+                      "en_US": "Parameter defines the size of images.",
+                      "zh_Hans": "设置图片尺寸"
+                    },
+                    "label": {
+                      "en_US": "Parameter defines the size of images.",
+                      "pt_BR": "Parameter defines the size of images.",
+                      "zh_Hans": "Parameter defines the size of images."
+                    },
+                    "llm_description": "Parameter defines the size of images.",
+                    "max": null,
+                    "min": null,
+                    "name": "imgsz",
+                    "options": [
+                      {
+                        "icon": "",
+                        "label": {
+                          "en_US": "Large",
+                          "pt_BR": "Large",
+                          "zh_Hans": "Large"
+                        },
+                        "value": "l"
+                      },
+                      {
+                        "icon": "",
+                        "label": {
+                          "en_US": "Medium",
+                          "pt_BR": "Medium",
+                          "zh_Hans": "Medium"
+                        },
+                        "value": "m"
+                      },
+                      {
+                        "icon": "",
+                        "label": {
+                          "en_US": "Icon",
+                          "pt_BR": "Icon",
+                          "zh_Hans": "Icon"
+                        },
+                        "value": "i"
+                      },
+                      {
+                        "icon": "",
+                        "label": {
+                          "en_US": "Larger than 640x480",
+                          "pt_BR": "Larger than 640x480",
+                          "zh_Hans": "Larger than 640x480"
+                        },
+                        "value": "vga"
+                      },
+                      {
+                        "icon": "",
+                        "label": {
+                          "en_US": "Larger than 800x600",
+                          "pt_BR": "Larger than 800x600",
+                          "zh_Hans": "Larger than 800x600"
+                        },
+                        "value": "svga"
+                      },
+                      {
+                        "icon": "",
+                        "label": {
+                          "en_US": "Larger than 1024x768",
+                          "pt_BR": "Larger than 1024x768",
+                          "zh_Hans": "Larger than 1024x768"
+                        },
+                        "value": "xga"
+                      },
+                      {
+                        "icon": "",
+                        "label": {
+                          "en_US": "Larger than 2 MP",
+                          "pt_BR": "Larger than 2 MP",
+                          "zh_Hans": "Larger than 2 MP"
+                        },
+                        "value": "2mp"
+                      },
+                      {
+                        "icon": "",
+                        "label": {
+                          "en_US": "Larger than 4 MP",
+                          "pt_BR": "Larger than 4 MP",
+                          "zh_Hans": "Larger than 4 MP"
+                        },
+                        "value": "4mp"
+                      },
+                      {
+                        "icon": "",
+                        "label": {
+                          "en_US": "Larger than 6 MP",
+                          "pt_BR": "Larger than 6 MP",
+                          "zh_Hans": "Larger than 6 MP"
+                        },
+                        "value": "6mp"
+                      },
+                      {
+                        "icon": "",
+                        "label": {
+                          "en_US": "Larger than 8 MP",
+                          "pt_BR": "Larger than 8 MP",
+                          "zh_Hans": "Larger than 8 MP"
+                        },
+                        "value": "8mp"
+                      },
+                      {
+                        "icon": "",
+                        "label": {
+                          "en_US": "Larger than 10 MP",
+                          "pt_BR": "Larger than 10 MP",
+                          "zh_Hans": "Larger than 10 MP"
+                        },
+                        "value": "10mp"
+                      },
+                      {
+                        "icon": "",
+                        "label": {
+                          "en_US": "Larger than 12 MP",
+                          "pt_BR": "Larger than 12 MP",
+                          "zh_Hans": "Larger than 12 MP"
+                        },
+                        "value": "12mp"
+                      },
+                      {
+                        "icon": "",
+                        "label": {
+                          "en_US": "Larger than 15 MP",
+                          "pt_BR": "Larger than 15 MP",
+                          "zh_Hans": "Larger than 15 MP"
+                        },
+                        "value": "15mp"
+                      },
+                      {
+                        "icon": "",
+                        "label": {
+                          "en_US": "Larger than 20 MP",
+                          "pt_BR": "Larger than 20 MP",
+                          "zh_Hans": "Larger than 20 MP"
+                        },
+                        "value": "20mp"
+                      },
+                      {
+                        "icon": "",
+                        "label": {
+                          "en_US": "Larger than 40 MP",
+                          "pt_BR": "Larger than 40 MP",
+                          "zh_Hans": "Larger than 40 MP"
+                        },
+                        "value": "40mp"
+                      },
+                      {
+                        "icon": "",
+                        "label": {
+                          "en_US": "Larger than 70 MP",
+                          "pt_BR": "Larger than 70 MP",
+                          "zh_Hans": "Larger than 70 MP"
+                        },
+                        "value": "70mp"
+                      }
+                    ],
+                    "precision": null,
+                    "required": false,
+                    "scope": null,
+                    "template": null,
+                    "type": "select"
+                  }
+                ]
+              }
+            ]
+          },
+          "agent_strategy": {},
+          "data_sources": {},
+          "triggers": {},
+          "install_count": 152552,
+          "version_updated_at": "2026-07-22T12:23:00.569697Z",
+          "latest_version": "0.1.6",
+          "latest_package_identifier": "langgenius/google:0.1.6@f9bdc225b84abfaca4865e7d71b503410fb40b8bd7e23b9f7d2b49554f906260",
+          "status": "active",
+          "deprecated_reason": "",
+          "alternative_plugin_id": "",
+          "tags": [
+            {
+              "name": "search"
+            }
+          ]
+        }
+      },
+      "msg": "ok"
+    }
+  }
+}

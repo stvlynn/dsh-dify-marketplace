@@ -1,0 +1,152 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/plugins/search/advanced",
+    "headers": {
+      "X-Dify-Version": "1.10.0",
+      "User-Agent": "<browser user agent>"
+    },
+    "body": {
+      "page": 1,
+      "page_size": 3,
+      "query": "",
+      "category": "extension",
+      "tags": []
+    }
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "plugins": [
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "Trigger a dify app from webhook.",
+              "pt_BR": "Acione um aplicativo dify a partir de um webhook.",
+              "zh_Hans": "通过网络钩子触发dify应用程序。"
+            },
+            "category": "extension",
+            "icon": "perzeuss/packages/webhook/_assets/icon.svg",
+            "index_id": "perzeuss___webhook",
+            "install_count": 12008,
+            "label": {
+              "en_US": "Webhook",
+              "pt_BR": "Webhook",
+              "zh_Hans": "网络钩子"
+            },
+            "latest_package_identifier": "perzeuss/webhook:0.5.1@2006a0757e2517a28113e19d6ef4b451c89289b8ac61ef918ba280b2534f662f",
+            "latest_version": "0.5.1",
+            "name": "webhook",
+            "org": "perzeuss",
+            "plugin_id": "perzeuss/webhook",
+            "plugins": {
+              "agent_strategies": null,
+              "endpoints": [
+                "group/webhook.yaml"
+              ],
+              "models": null,
+              "tools": null
+            },
+            "privacy_options": "",
+            "privacy_policy": "PRIVACY.md",
+            "repository": "",
+            "status": "active",
+            "tags": [],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "community"
+            },
+            "version_updated_at": "2025-03-28T07:01:27Z"
+          },
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "Convert your Dify tools's API to MCP compatible API (Note: must dify 1.2.0+)",
+              "zh_Hans": "将您的Dify工具的API转换为MCP兼容API（注：必须 dify 1.2.0+）"
+            },
+            "category": "extension",
+            "icon": "junjiem/packages/mcp_compat_dify_tools/_assets/icon.svg",
+            "index_id": "junjiem___mcp_compat_dify_tools",
+            "install_count": 17842,
+            "label": {
+              "en_US": "MCP Compatible Dify Tools",
+              "zh_Hans": "MCP Compatible Dify Tools"
+            },
+            "latest_package_identifier": "junjiem/mcp_compat_dify_tools:0.1.1@e6e0ae3c135ab0edcc69d7d15fd950db8cd43ba398b415a56a0556a4f7b2ed05",
+            "latest_version": "0.1.1",
+            "name": "mcp_compat_dify_tools",
+            "org": "junjiem",
+            "plugin_id": "junjiem/mcp_compat_dify_tools",
+            "plugins": {
+              "agent_strategies": null,
+              "endpoints": [
+                "group/mcp_compat_dify_tools.yaml"
+              ],
+              "models": null,
+              "tools": null
+            },
+            "privacy_options": "",
+            "privacy_policy": "PRIVACY.md",
+            "repository": "",
+            "status": "active",
+            "tags": [],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "community"
+            },
+            "version_updated_at": "2025-06-10T14:48:18Z"
+          },
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "Convert your Dify Models into OpenAI compatible API",
+              "ja_JP": "DifyモデルをOpenAI互換APIに変換",
+              "pt_BR": "Converter seus modelos Dify em uma API compatível com OpenAI",
+              "zh_Hans": "将您的Dify模型转换为OpenAI兼容API"
+            },
+            "category": "extension",
+            "icon": "langgenius/packages/oaicompat_dify_model/_assets/icon.svg",
+            "index_id": "langgenius___oaicompat_dify_model",
+            "install_count": 15197,
+            "label": {
+              "en_US": "OpenAI Compatible Dify Models",
+              "ja_JP": "OpenAI Compatible Dify Models",
+              "pt_BR": "OpenAI Compatible Dify Models",
+              "zh_Hans": "OpenAI Compatible Dify Models"
+            },
+            "latest_package_identifier": "langgenius/oaicompat_dify_model:0.0.10@753d3033ef260c7cbb489e4165dcd90cf953a2a9c1332436ceb4a72452d2796a",
+            "latest_version": "0.0.10",
+            "name": "oaicompat_dify_model",
+            "org": "langgenius",
+            "plugin_id": "langgenius/oaicompat_dify_model",
+            "plugins": {
+              "agent_strategies": null,
+              "datasources": null,
+              "endpoints": [
+                "group/oaicompat_dify_model.yaml"
+              ],
+              "models": null,
+              "tools": null,
+              "triggers": null
+            },
+            "privacy_options": "",
+            "privacy_policy": "PRIVACY.md",
+            "repository": null,
+            "status": "active",
+            "tags": [],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "langgenius"
+            },
+            "version_updated_at": "2026-08-13T14:06:56Z"
+          }
+        ],
+        "total": 33
+      },
+      "msg": "ok"
+    }
+  }
+}

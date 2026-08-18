@@ -1,0 +1,169 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/plugins/search/advanced",
+    "headers": {
+      "X-Dify-Version": "1.10.0",
+      "User-Agent": "<browser user agent>"
+    },
+    "body": {
+      "page": 1,
+      "page_size": 3,
+      "query": "search",
+      "tags": [
+        "search"
+      ]
+    }
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "plugins": [
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "A tool for performing a Google SERP search and extracting snippets and webpages.Input should be a search query.",
+              "zh_Hans": "一个用于执行 Google SERP 搜索并提取片段和网页的工具。输入应该是一个搜索查询。"
+            },
+            "category": "tool",
+            "icon": "langgenius/packages/google/_assets/icon.svg",
+            "index_id": "langgenius___google",
+            "install_count": 152545,
+            "label": {
+              "en_US": "Google"
+            },
+            "latest_package_identifier": "langgenius/google:0.1.6@f9bdc225b84abfaca4865e7d71b503410fb40b8bd7e23b9f7d2b49554f906260",
+            "latest_version": "0.1.6",
+            "name": "google",
+            "org": "langgenius",
+            "plugin_id": "langgenius/google",
+            "plugins": {
+              "agent_strategies": null,
+              "datasources": null,
+              "endpoints": null,
+              "models": null,
+              "tools": [
+                "provider/google.yaml"
+              ],
+              "triggers": null
+            },
+            "privacy_options": "",
+            "privacy_policy": "",
+            "repository": "",
+            "status": "active",
+            "tags": [
+              {
+                "name": "search"
+              }
+            ],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "langgenius"
+            },
+            "version_updated_at": "2026-07-22T12:23:00Z"
+          },
+          {
+            "badges": [
+              "partner"
+            ],
+            "brief": {
+              "en_US": "A powerful AI-native search engine and web content extraction tool that provides highly relevant search results and raw content extraction from web pages.",
+              "zh_Hans": "一个强大的原生AI搜索引擎和网页内容提取工具，提供高度相关的搜索结果和网页原始内容提取。"
+            },
+            "category": "tool",
+            "icon": "langgenius/packages/tavily/_assets/icon.png",
+            "index_id": "langgenius___tavily",
+            "install_count": 318560,
+            "label": {
+              "en_US": "Tavily",
+              "zh_Hans": "Tavily"
+            },
+            "latest_package_identifier": "langgenius/tavily:0.1.11@391b4eb366f3bb04222411f621f9e7f20f730e96a38cbc3752a56ab00cab38b0",
+            "latest_version": "0.1.11",
+            "name": "tavily",
+            "org": "langgenius",
+            "plugin_id": "langgenius/tavily",
+            "plugins": {
+              "agent_strategies": null,
+              "datasources": null,
+              "endpoints": null,
+              "models": null,
+              "tools": [
+                "provider/tavily.yaml"
+              ],
+              "triggers": null
+            },
+            "privacy_options": "",
+            "privacy_policy": "",
+            "repository": "",
+            "status": "active",
+            "tags": [
+              {
+                "name": "search"
+              }
+            ],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "langgenius"
+            },
+            "version_updated_at": "2026-07-20T06:42:01Z"
+          },
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "Search designed for AI Business-grade search and crawling for any web data",
+              "ja_JP": "Search designed for AI Business-grade search and crawling for any web data",
+              "pt_BR": "Search designed for AI Business-grade search and crawling for any web data",
+              "zh_Hans": "Search designed for AI Business-grade search and crawling for any web data"
+            },
+            "category": "tool",
+            "icon": "yevanchen/packages/exa/_assets/exa.jpg",
+            "index_id": "yevanchen___exa",
+            "install_count": 10807,
+            "label": {
+              "en_US": "exa",
+              "ja_JP": "exa",
+              "pt_BR": "exa",
+              "zh_Hans": "exa"
+            },
+            "latest_package_identifier": "yevanchen/exa:0.0.5@08c5312eae480639682313b2350b54050308605a6f0e4292bb78807e71fa6128",
+            "latest_version": "0.0.5",
+            "name": "exa",
+            "org": "yevanchen",
+            "plugin_id": "yevanchen/exa",
+            "plugins": {
+              "agent_strategies": null,
+              "endpoints": null,
+              "models": null,
+              "tools": [
+                "provider/exa.yaml"
+              ]
+            },
+            "privacy_options": "",
+            "privacy_policy": "PRIVACY.md",
+            "repository": "",
+            "status": "active",
+            "tags": [
+              {
+                "name": "productivity"
+              },
+              {
+                "name": "search"
+              }
+            ],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "community"
+            },
+            "version_updated_at": "2025-05-21T05:31:26Z"
+          }
+        ],
+        "total": 42
+      },
+      "msg": "ok"
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+  height: 100%;
+  color: var(--dsw-text, inherit);
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.search {
+  flex: 1;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.tab {
+  appearance: none;
+  border: 1px solid var(--dsw-border, #444);
+  background: transparent;
+  color: inherit;
+  border-radius: 999px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.tabActive {
+  background: var(--dsw-fill, #333);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+  overflow: auto;
+}
+
+.card {
+  border: 1px solid var(--dsw-border, #444);
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  text-align: left;
+  background: transparent;
+  color: inherit;
+}
+
+.cardHeader {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.brief {
+  font-size: 12px;
+  opacity: 0.8;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.meta {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.detail {
+  border-top: 1px solid var(--dsw-border, #444);
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow: auto;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.error {
+  color: var(--dsw-danger, #c44);
+  font-size: 12px;
+}
+
+.empty {
+  opacity: 0.7;
+  font-size: 13px;
+}
+
+.collection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.collectionTitle {
+  font-size: 13px;
+  font-weight: 600;
+}

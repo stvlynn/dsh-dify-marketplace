@@ -1,0 +1,162 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/plugins/search/advanced",
+    "headers": {
+      "X-Dify-Version": "1.10.0",
+      "User-Agent": "<browser user agent>"
+    },
+    "body": {
+      "page": 1,
+      "page_size": 3,
+      "query": "",
+      "category": "trigger",
+      "tags": []
+    }
+  },
+  "response": {
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "body": {
+      "code": 0,
+      "data": {
+        "plugins": [
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "Outlook Trigger is a trigger plugin that allows you to trigger actions based on Outlook events.",
+              "ja_JP": "Outlook Triggerは、Outlook イベントに基づいてアクションをトリガーするトリガープラグインです。",
+              "zh_Hans": "Outlook Trigger是一个触发器插件，支持在收到 Outlook 邮件时触发操作。"
+            },
+            "category": "trigger",
+            "icon": "langgenius/packages/outlook_trigger/_assets/icon.svg",
+            "index_id": "langgenius___outlook_trigger",
+            "install_count": 5591,
+            "label": {
+              "en_US": "Outlook Trigger",
+              "ja_JP": "Outlook Trigger",
+              "zh_Hans": "Outlook Trigger"
+            },
+            "latest_package_identifier": "langgenius/outlook_trigger:1.0.1@056d1ef888caed2c8638ca1362ab8b0d38aa4abe45e9a6d2a202c260f89c8cb8",
+            "latest_version": "1.0.1",
+            "name": "outlook_trigger",
+            "org": "langgenius",
+            "plugin_id": "langgenius/outlook_trigger",
+            "plugins": {
+              "agent_strategies": null,
+              "datasources": null,
+              "endpoints": null,
+              "models": null,
+              "tools": null,
+              "triggers": [
+                "provider/outlook.yaml"
+              ]
+            },
+            "privacy_options": "",
+            "privacy_policy": "",
+            "repository": null,
+            "status": "active",
+            "tags": [],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "langgenius"
+            },
+            "version_updated_at": "2026-07-20T06:42:08Z"
+          },
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "Open-source platform for receiving message from IMs like Telegram, Discord, Slack, LINE, Lark, QQ, WeChat, DingTalk e.g.",
+              "ja_JP": "各種IMからのメッセージを受信するためのオープンソースプラットフォーム。LINE、Telegram、Discord、Slack、Lark、QQ、WeChat、DingTalkなど。",
+              "pt_BR": "Plataforma open-source para processar mensagens de IMs como LINE, Telegram, Discord, Slack, Lark, QQ, WeChat, DingTalk, etc.",
+              "zh_Hans": "处理各种即时通信消息的开源平台，支持 QQ、微信、企微、公众号、飞书、Telegram、Discord、Slack、Lark、钉钉等平台。"
+            },
+            "category": "trigger",
+            "icon": "rockchinq/packages/langbot_trigger/_assets/icon.svg",
+            "index_id": "rockchinq___langbot_trigger",
+            "install_count": 11991,
+            "label": {
+              "en_US": "LangBot Trigger",
+              "ja_JP": "LangBot Trigger",
+              "pt_BR": "LangBot Trigger",
+              "zh_Hans": "LangBot 触发器"
+            },
+            "latest_package_identifier": "rockchinq/langbot_trigger:0.1.4@d0a2de70ae6f8b917aa8141d5a28f207df046c3ccd91c6ed7aa028cae8365abe",
+            "latest_version": "0.1.4",
+            "name": "langbot_trigger",
+            "org": "rockchinq",
+            "plugin_id": "rockchinq/langbot_trigger",
+            "plugins": {
+              "agent_strategies": null,
+              "datasources": null,
+              "endpoints": null,
+              "models": null,
+              "tools": null,
+              "triggers": [
+                "provider/langbot_trigger.yaml"
+              ]
+            },
+            "privacy_options": "",
+            "privacy_policy": "PRIVACY.md",
+            "repository": "https://github.com/langbot-app/dify-plugin-langbot-trigger",
+            "status": "active",
+            "tags": [],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "community"
+            },
+            "version_updated_at": "2026-01-01T13:56:12Z"
+          },
+          {
+            "badges": [],
+            "brief": {
+              "en_US": "Slack trigger plugin example for receiving workspace events.",
+              "ja_JP": "Slack ワークスペースのイベントを受信するためのトリガープラグインのサンプルです。",
+              "zh_Hans": "Slack 工作区事件触发器插件示例。"
+            },
+            "category": "trigger",
+            "icon": "langgenius/packages/slack_trigger/_assets/icon.svg",
+            "index_id": "langgenius___slack_trigger",
+            "install_count": 1888,
+            "label": {
+              "en_US": "Slack",
+              "ja_JP": "Slack",
+              "zh_Hans": "Slack"
+            },
+            "latest_package_identifier": "langgenius/slack_trigger:0.3.0@b831dc6e1c3c72a9ec79c4e09310113b95c89dd643e69ba8bc9c78f42537ea74",
+            "latest_version": "0.3.0",
+            "name": "slack_trigger",
+            "org": "langgenius",
+            "plugin_id": "langgenius/slack_trigger",
+            "plugins": {
+              "agent_strategies": null,
+              "datasources": null,
+              "endpoints": null,
+              "models": null,
+              "tools": null,
+              "triggers": [
+                "provider/slack.yaml"
+              ]
+            },
+            "privacy_options": "",
+            "privacy_policy": "",
+            "repository": null,
+            "status": "active",
+            "tags": [
+              {
+                "name": "utilities"
+              }
+            ],
+            "type": "plugin",
+            "verification": {
+              "authorized_category": "langgenius"
+            },
+            "version_updated_at": "2026-07-20T06:42:01Z"
+          }
+        ],
+        "total": 21
+      },
+      "msg": "ok"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "mode": "playwright-chromium",
+  "page": {
+    "status": 200,
+    "title": "Dify Marketplace",
+    "url": "https://marketplace.dify.ai/",
+    "tabs": [
+      {
+        "label": "All",
+        "visible": true
+      },
+      {
+        "label": "Models",
+        "visible": true
+      },
+      {
+        "label": "Tools",
+        "visible": true
+      },
+      {
+        "label": "Data Sources",
+        "visible": true
+      },
+      {
+        "label": "Agent",
+        "visible": true
+      },
+      {
+        "label": "Triggers",
+        "visible": true
+      },
+      {
+        "label": "Extensions",
+        "visible": true
+      },
+      {
+        "label": "Bundles",
+        "visible": true
+      }
+    ],
+    "networkSample": [
+      {
+        "url": "https://marketplace.dify.ai/",
+        "status": 200,
+        "type": "document"
+      }
+    ]
+  },
+  "api": [
+    {
+      "name": "collections",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "ok": true
+    },
+    {
+      "name": "search_plugins",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "ok": true
+    }
+  ]
+}

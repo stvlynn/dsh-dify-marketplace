@@ -1,0 +1,66 @@
+{
+  "x_frame_options": null,
+  "homepage_http_code": 200,
+  "homepage_bytes": 152714,
+  "contains_models": true,
+  "contains_tools": true,
+  "contains_collections": false,
+  "sample_plugin_from_search": {
+    "org": "langgenius",
+    "name": "tongyi",
+    "plugin_id": "langgenius/tongyi",
+    "latest_package_identifier": "langgenius/tongyi:0.2.13@76feba79a09357673e1ebe24f1ec98123062d3f3198abe08551804def1fcd020",
+    "category": "model"
+  },
+  "sample_collection": {
+    "name": "partners",
+    "description": {
+      "en_US": "Plugins verified by Dify partners.",
+      "ja_JP": "Dify パートナーによって認定されたプラグイン。",
+      "zh_Hans": "由 Dify 合作伙伴认证的插件。",
+      "zh_Hant": "由 Dify 合作夥伴認證的外掛程式。"
+    },
+    "label": {
+      "en_US": "Partners",
+      "ja_JP": "パートナー",
+      "zh_Hans": "合作伙伴",
+      "zh_Hant": "合作夥伴"
+    },
+    "created_at": "2026-01-21T07:36:19.544592Z",
+    "updated_at": "2026-05-28T07:33:35.248418Z",
+    "searchable": false,
+    "search_params": {},
+    "priority": 8
+  },
+  "sample_bundle": null,
+  "tabs_from_dify_source": [
+    "all",
+    "model",
+    "tool",
+    "datasource",
+    "agent-strategy",
+    "trigger",
+    "extension",
+    "bundle"
+  ],
+  "tag_keys_from_dify_source": [
+    "agent",
+    "rag",
+    "search",
+    "image",
+    "videos",
+    "weather",
+    "finance",
+    "design",
+    "travel",
+    "social",
+    "news",
+    "medical",
+    "productivity",
+    "education",
+    "business",
+    "entertainment",
+    "utilities",
+    "other"
+  ]
+}
