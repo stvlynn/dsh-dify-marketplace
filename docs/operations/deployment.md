@@ -39,4 +39,4 @@ Remove or comment the insert row in the profile patch, or uninstall the bundle w
 
 ## dsh.pub
 
-First-version listing is out of scope for v1. Submission later follows https://dsh.pub/en/submit/ without claiming security review.
+dsh.pub is a third-party plugin catalog, not an official DeepSeek Harness site. First-version listing is out of scope for v1. Submission later follows https://dsh.pub/en/submit/ without claiming security review.

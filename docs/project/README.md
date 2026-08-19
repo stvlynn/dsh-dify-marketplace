@@ -11,7 +11,7 @@ dsh-dify-marketplace is an independently installable DeepSeek Harness plugin. It
 
 ## Non-goals
 
-- Publishing to dsh.pub in the first product cut (README describes the later submission steps).
+- Listing on the third-party dsh.pub catalog in the first product cut (README describes the later submission steps).
 - Impersonating `@deepseek-ai` or claiming official Dify/DeepSeek endorsement.
 - Iframe of `https://marketplace.dify.ai`.
 

@@ -63,7 +63,7 @@ pnpm test:e2e
 
 ## Documentation
 
-Start at [`docs/README.md`](docs/README.md). Plugin authors should also read [dsh.pub/develop-plugin.md](https://dsh.pub/develop-plugin.md).
+Start at [`docs/README.md`](docs/README.md). Plugin authors should also read the official [DeepSeek Harness plugin development guide](https://deepseek-harness.github.io/deepseek-harness/en/develop/basic/).
 
 ## License
 

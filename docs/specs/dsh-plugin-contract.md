@@ -7,7 +7,7 @@ No local `dsh` binary was present. Contracts below are from that tag (scratch cl
 - [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) `2fad14a7dc98bf17bd001d2515b7e5519ca67869` — `dshmarket@1.14.0-beta.2`, peer `@deepseek-ai/cordis@^4.0.1`, `@deepseek-ai/dsh-settings@^0.1.0-rc.7`, client inject rc.7 packages, tsdown factory bundle.
 - [bradeGithub/DSH-Plugins-Marketplace](https://github.com/bradeGithub/DSH-Plugins-Marketplace) `861842b889ca87d49608fa20b4bbb819f5aebd01` — `dsh-plugin-marketplace@1.5.3`, `dsh.client.inject` runtime + ui-settings, `immediately: true`, Host `inject: [webServer]`.
 
-dsh.pub develop-plugin.md is still pinned to rc.5 (`47f943859bef60e4160492346772ded9b24f765a`). Where they differ, **rc.7 source wins**.
+Official plugin development docs live at [deepseek-harness.github.io/deepseek-harness](https://deepseek-harness.github.io/deepseek-harness/en/develop/basic/). The dsh.pub `develop-plugin.md` guide is a third-party catalog-admission document (self-described as "not an official DeepSeek Harness specification") still pinned to rc.5 (`47f943859bef60e4160492346772ded9b24f765a`). Where any guide differs, **rc.7 source wins**.
 
 ## Package identity
 

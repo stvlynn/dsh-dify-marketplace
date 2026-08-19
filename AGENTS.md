@@ -12,7 +12,7 @@ This is a DeepSeek Harness plugin repository (Host + Web UI). Layout is plugin-s
 
 ## DeepSeek Harness plugin development
 
-Before changing plugin code, read https://dsh.pub/develop-plugin.md completely. Follow the pinned runtime contract and verification boundaries there; this repository's own security, testing, and release rules remain authoritative.
+Before changing plugin code, read the official plugin development guide at https://deepseek-harness.github.io/deepseek-harness/en/develop/basic/ completely (docs home: https://deepseek-harness.github.io/deepseek-harness/en/guide/quickstart). Follow the pinned runtime contract and verification boundaries there; this repository's own security, testing, and release rules remain authoritative.
 
 Target Harness for this repository: **dsh-v0.1.0-rc.7** commit `99f6f02fecdb7dff40c3fbc9470f5907c29f74ca`. Slot names, Remote APIs, and `ctx.llm` registration are taken from that checkout. See [`docs/specs/dsh-plugin-contract.md`](docs/specs/dsh-plugin-contract.md).
 
