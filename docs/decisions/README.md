@@ -7,3 +7,4 @@ Architecture decision records.
 - [`002-official-plugin-daemon.md`](002-official-plugin-daemon.md)
 - [`003-ctx-plugin-children.md`](003-ctx-plugin-children.md)
 - [`004-namespacing.md`](004-namespacing.md)
+- [`005-embedded-daemon.md`](005-embedded-daemon.md)
