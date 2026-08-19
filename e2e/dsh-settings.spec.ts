@@ -27,7 +27,7 @@ test.describe('DSH Settings Dify Marketplace', () => {
     const dialog = page.getByRole('dialog', { name: 'Settings' })
     await dialog.waitFor({ timeout: 15_000 })
     await dialog.getByRole('button', { name: 'Dify Marketplace' }).click()
-    await expect(dialog.getByText('Marketplace reachable')).toBeVisible({ timeout: 30_000 })
+    await expect(dialog.getByPlaceholder('Search plugins')).toBeVisible({ timeout: 30_000 })
     await dialog.getByPlaceholder('Search plugins').fill('google')
     await dialog.getByRole('button', { name: 'Search' }).click()
     await expect(dialog.getByText(/langgenius\//).first()).toBeVisible({ timeout: 30_000 })

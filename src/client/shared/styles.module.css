@@ -4,7 +4,9 @@
   gap: 12px;
   min-height: 0;
   height: 100%;
-  color: var(--dsw-text, inherit);
+  color: var(--dsw-alias-label-primary, inherit);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .banner {
@@ -38,16 +40,33 @@
 
 .tab {
   appearance: none;
-  border: 1px solid var(--dsw-border, #444);
+  font: inherit;
+  border: 1px solid var(--dsw-alias-border-l2, #444);
   background: transparent;
   color: inherit;
   border-radius: 999px;
-  padding: 4px 10px;
+  padding: 4px 14px;
+  min-block-size: 40px;
+  display: inline-flex;
+  align-items: center;
   cursor: pointer;
+  transition-property: background-color, border-color, scale;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
 }
 
-.tabActive {
-  background: var(--dsw-fill, #333);
+.tab:not(.tabActive):hover {
+  background: var(--dsw-alias-interactive-bg-hover, rgba(127, 127, 127, 0.12));
+}
+
+.tab:focus-visible {
+  outline: 2px solid var(--dsw-alias-brand-primary, #4c8dff);
+  outline-offset: 1px;
+}
+
+.tabActive,
+.tabActive:hover {
+  background: var(--dsw-alias-bg-layer-3, #333);
 }
 
 .grid {
@@ -58,7 +77,9 @@
 }
 
 .card {
-  border: 1px solid var(--dsw-border, #444);
+  appearance: none;
+  font: inherit;
+  border: 1px solid var(--dsw-alias-border-l2, #444);
   border-radius: 8px;
   padding: 10px;
   display: flex;
@@ -68,6 +89,26 @@
   text-align: left;
   background: transparent;
   color: inherit;
+  transition-property: background-color, border-color, scale;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+}
+
+.card:hover {
+  background: var(--dsw-alias-interactive-bg-hover, rgba(127, 127, 127, 0.12));
+  border-color: var(--dsw-alias-label-dimmed, #666);
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--dsw-alias-brand-primary, #4c8dff);
+  outline-offset: 1px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .tab:active,
+  .card:active {
+    scale: 0.96;
+  }
 }
 
 .cardHeader {
@@ -81,16 +122,26 @@
   height: 28px;
   border-radius: 6px;
   object-fit: cover;
+  outline: 1px solid oklch(0 0 0 / 0.1);
+  outline-offset: -1px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .icon {
+    outline-color: oklch(1 0 0 / 0.1);
+  }
 }
 
 .title {
   font-weight: 600;
   font-size: 13px;
+  text-wrap: balance;
 }
 
 .brief {
   font-size: 12px;
   opacity: 0.8;
+  text-wrap: pretty;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -103,12 +154,29 @@
 }
 
 .detail {
-  border-top: 1px solid var(--dsw-border, #444);
+  border-top: 1px solid var(--dsw-alias-border-l2, #444);
   padding-top: 12px;
   display: flex;
   flex-direction: column;
   gap: 8px;
   overflow: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .detail {
+    animation: detail-enter 200ms ease-out;
+  }
+}
+
+@keyframes detail-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .actions {
@@ -123,6 +191,15 @@
   gap: 8px;
 }
 
+/* Column flex stretches children; keep the submit button content-sized. */
+.submitButton {
+  align-self: flex-start;
+}
+
+.closeButton {
+  margin-inline-start: auto;
+}
+
 .field label {
   display: block;
   font-size: 12px;
@@ -130,7 +207,7 @@
 }
 
 .error {
-  color: var(--dsw-danger, #c44);
+  color: var(--dsw-alias-label-error, #c44);
   font-size: 12px;
 }
 
@@ -148,4 +225,5 @@
 .collectionTitle {
   font-size: 13px;
   font-weight: 600;
+  text-wrap: balance;
 }

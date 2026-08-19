@@ -16,10 +16,7 @@ export declare const en: {
     readonly tabExtensions: "Extensions";
     readonly tabBundles: "Bundles";
     readonly tabInstalled: "Installed";
-    readonly collections: "Collections";
-    readonly marketplaceUp: "Marketplace reachable";
     readonly marketplaceDown: "Marketplace unreachable";
-    readonly daemonUp: "Plugin daemon reachable";
     readonly daemonDown: "Plugin daemon unreachable";
     readonly daemonMissing: "Plugin daemon is not configured";
     readonly install: "Install";
@@ -27,17 +24,11 @@ export declare const en: {
     readonly uninstall: "Uninstall";
     readonly uninstalling: "Uninstalling…";
     readonly installed: "Installed";
-    readonly upgrade: "Upgrade";
     readonly credentials: "Save credentials";
     readonly noResults: "No plugins in this view.";
     readonly emptyBundles: "The marketplace returned no bundles.";
     readonly failed: "Failed";
-    readonly pending: "Pending";
-    readonly needsCredentials: "Needs credentials";
-    readonly active: "Active";
     readonly close: "Close";
-    readonly versions: "Versions";
-    readonly installCount: "{count} installs";
 };
 export declare const zh: Record<keyof typeof en, string>;
 export declare const NS = "dsh-dify-marketplace";

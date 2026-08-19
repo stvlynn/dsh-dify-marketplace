@@ -147,16 +147,20 @@ export function MarketplacePage({ t }: MarketplacePageProps) {
 
   return (
     <div className={styles.root}>
-      {status !== undefined && (
+      {status !== undefined && (!status.marketplace.reachable || !status.daemon.configured || !status.daemon.reachable) && (
         <div className={styles.banner}>
-          <span className={styles.status}>
-            <StateDot state={status.marketplace.reachable ? 'done' : 'error'} />
-            {status.marketplace.reachable ? t('marketplaceUp') : t('marketplaceDown')}
-          </span>
-          <span className={styles.status}>
-            <StateDot state={status.daemon.configured ? (status.daemon.reachable ? 'done' : 'error') : 'warning'} />
-            {!status.daemon.configured ? t('daemonMissing') : status.daemon.reachable ? t('daemonUp') : t('daemonDown')}
-          </span>
+          {!status.marketplace.reachable && (
+            <span className={styles.status}>
+              <StateDot state="error" />
+              {t('marketplaceDown')}
+            </span>
+          )}
+          {(!status.daemon.configured || !status.daemon.reachable) && (
+            <span className={styles.status}>
+              <StateDot state={status.daemon.configured ? 'error' : 'warning'} />
+              {status.daemon.configured ? t('daemonDown') : t('daemonMissing')}
+            </span>
+          )}
         </div>
       )}
       <div className={styles.toolbar}>
@@ -280,7 +284,7 @@ function Detail(props: {
       <div className={styles.cardHeader}>
         <img className={styles.icon} src={api.iconUrl(detail.plugin.plugin_id)} alt="" />
         <div className={styles.title}>{localized(detail.plugin.label)}</div>
-        <Button onClick={props.onClose}>{t('close')}</Button>
+        <Button className={styles.closeButton} onClick={props.onClose}>{t('close')}</Button>
       </div>
       <div className={styles.brief}>{localized(detail.plugin.brief)}</div>
       <div className={styles.meta}>
@@ -312,7 +316,7 @@ function Detail(props: {
               />
             </div>
           ))}
-          <Button type="submit" disabled={props.busy !== undefined}>{t('credentials')}</Button>
+          <Button type="submit" className={styles.submitButton} disabled={props.busy !== undefined}>{t('credentials')}</Button>
         </form>
       )}
     </div>
