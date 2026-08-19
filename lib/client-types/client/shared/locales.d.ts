@@ -5,7 +5,6 @@
  */
 export declare const en: {
     readonly nav: "Dify Marketplace";
-    readonly subtitle: "Browse and install Dify plugins. Installation is durable only after the Host reports success.";
     readonly searchPlaceholder: "Search plugins";
     readonly search: "Search";
     readonly tabAll: "All";
@@ -30,7 +29,6 @@ export declare const en: {
     readonly installed: "Installed";
     readonly upgrade: "Upgrade";
     readonly credentials: "Save credentials";
-    readonly credentialsHint: "Credentials are stored on the Host. They never enter this browser bundle as durable state.";
     readonly noResults: "No plugins in this view.";
     readonly emptyBundles: "The marketplace returned no bundles.";
     readonly failed: "Failed";

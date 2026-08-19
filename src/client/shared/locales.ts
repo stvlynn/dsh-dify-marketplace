@@ -6,7 +6,6 @@
 
 export const en = {
   nav: 'Dify Marketplace',
-  subtitle: 'Browse and install Dify plugins. Installation is durable only after the Host reports success.',
   searchPlaceholder: 'Search plugins',
   search: 'Search',
   tabAll: 'All',
@@ -31,7 +30,6 @@ export const en = {
   installed: 'Installed',
   upgrade: 'Upgrade',
   credentials: 'Save credentials',
-  credentialsHint: 'Credentials are stored on the Host. They never enter this browser bundle as durable state.',
   noResults: 'No plugins in this view.',
   emptyBundles: 'The marketplace returned no bundles.',
   failed: 'Failed',
@@ -45,7 +43,6 @@ export const en = {
 
 export const zh: Record<keyof typeof en, string> = {
   nav: 'Dify 插件市场',
-  subtitle: '浏览并安装 Dify 插件。只有 Host 报告成功后，安装才算持久完成。',
   searchPlaceholder: '搜索插件',
   search: '搜索',
   tabAll: '全部',
@@ -70,7 +67,6 @@ export const zh: Record<keyof typeof en, string> = {
   installed: '已安装',
   upgrade: '升级',
   credentials: '保存凭证',
-  credentialsHint: '凭证保存在 Host 上，不会作为持久状态进入此浏览器包。',
   noResults: '此视图没有插件。',
   emptyBundles: '市场未返回任何插件包。',
   failed: '失败',

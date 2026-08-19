@@ -103,7 +103,10 @@ export function MarketplacePage({ t }: MarketplacePageProps) {
         }
       }
       await loadList()
-      setSelected(started.pluginId)
+      // Refresh in place: setSelected with the same id is a no-op, so the
+      // detail effect would never re-fetch and the view would keep showing
+      // the Install button after a successful install.
+      setDetail(await api.detail(started.pluginId))
     } catch (caught) {
       setError(caught instanceof Error ? caught.message : String(caught))
     } finally {
@@ -144,7 +147,6 @@ export function MarketplacePage({ t }: MarketplacePageProps) {
 
   return (
     <div className={styles.root}>
-      <p>{t('subtitle')}</p>
       {status !== undefined && (
         <div className={styles.banner}>
           <span className={styles.status}>
@@ -298,7 +300,6 @@ function Detail(props: {
       </div>
       {detail.credentialFields.length > 0 && (
         <form className={styles.form} onSubmit={props.onCredentials}>
-          <p>{t('credentialsHint')}</p>
           {detail.credentialFields.map(field => (
             <div key={field.name} className={styles.field}>
               <label htmlFor={`cred-${field.name}`}>{localized(field.label) || field.name}</label>
