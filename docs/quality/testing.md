@@ -28,7 +28,7 @@ DSH_WEB_URL=http://127.0.0.1:<port> pnpm test:e2e:dsh
 Journeys:
 
 1. Live marketplace homepage title and tabs match `fixtures/marketplace/playwright-ia.json`; search API returns unique identifiers.
-2. DSH web profile with this plugin; Settings → Dify Marketplace lists live plugins and search works (`test:e2e:dsh`).
+2. DSH web profile with this plugin; Settings → Dify Marketplace lists live plugins and search works (`test:e2e:dsh`). A first-run web profile shows an API-key modal; the spec clicks **Configure later** before opening Settings. Use an isolated `DSH_HOME` and `dsh --profile web --port <port>` when port 3080 is already taken.
 3. Install the repo-authored `.difypkg` through the daemon (`pnpm package:fixture` then `pnpm test:integration`).
 4. Uninstall removes the daemon installation.
 
